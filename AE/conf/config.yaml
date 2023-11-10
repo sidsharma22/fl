@@ -1,0 +1,12 @@
+
+num_clients: 10
+batch_size: 32
+device: 'cpu'
+iid: 0  ## Create non-IID dataset
+dataset: 'StackOverflow' #'MNIST'
+model: 'LinearM'
+adaptivity: 'sa'
+server_lr: [0.01] #[0.001,0.01,0.5,1,5,10] 0.1,0.0316227766,
+client_lr: [1] #0.001,0.1,0.01,0.0316227766, #40,31.622,100] #,10,5,1,0.1,0.0316227766,0.01]  #[10,5,1,0.1,0.0316227766,0.01] normal best lr: 10
+client_eps: [0.01]
+server_eps: [0.01]
